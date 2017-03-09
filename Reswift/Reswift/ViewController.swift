@@ -1,21 +1,30 @@
 //
 //  ViewController.swift
-//  Swift App
+//  Reswift
 //
-//  Created by Pants on 3/5/17.
+//  Created by Pants on 3/7/17.
 //  Copyright © 2017 Pants. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var NewLabel: UILabel!
 
+    @IBOutlet weak var Newlabel: UILabel!
+    
   
+    
+    @IBAction func buttontapped(_ sender: Any) {
+        Newlabel.text = "Hello There!"
+    }
+    
+   
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        NewLabel.text = "Hello there"
+        
     }
 
     override func didReceiveMemoryWarning() {
