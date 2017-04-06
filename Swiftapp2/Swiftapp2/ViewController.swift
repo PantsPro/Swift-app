@@ -13,24 +13,22 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Namelabel: UILabel!
     
+    @IBOutlet weak var text1: UITextField!
     var tapcount = 0
     
+    @IBOutlet weak var text2: UITextField!
+    
+    
     @IBAction func Hiresponse(_ sender: Any) {
+       
+       Namelabel.text = "Answer is \(Double(text1.text!)! + Double(text2.text!)!)"
         
-        tapcount = tapcount + 1
-        
-        if tapcount >= 10 {
-            Namelabel.text = "You've tapped 10 times!"
         }
-    }
     
     
-    @IBOutlet weak var Buttonanswer: UILabel!
     
+   
     
-    @IBAction func Buttonask(_ sender: Any) {
-        Buttonanswer.text = "Buttons are cool!"
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
